@@ -1,40 +1,75 @@
-#Chapter 1
+# Remember about syntax and every small detail during writing code as even smallest mistake can be fatal.
 
-# DATARULE
+#<<<<<<<<<<<LET START>>>>>>>>>>>
+
+
+
+# DATA_RULE 
 
 a = 1 # a is an integer
-b = 5.22 # b is a floating point number
-c = "Harry" # c is a string
-d = False # d is a boolean variable
+b = 5.22 # b is a floating point number(decimal)
+
+c = "sariantkod" # c is a string ( you can also use single quote instead of  double no problem)
+
+d = False # d is a boolean variable(give output in true or false)
 e = None # e is a none type variable
 
-# VARIABLERULE
 
-a = 23  # invalid  'a'
-kodkumad = 435  # invalid kod kumad
-harry45 = 34  # invalid 45harry
-sameer_kumar = 45  # sameer-kumar   invalid or sameer$kumar
+
+
+# VARIABL_ERULE
+
+a = 23  # invalid  'a'(NO use of Double quotes and Single quote)
+
+kodkumar = 435  # invalid kod kumar (no gap between character)
+
+harry45 = 34  # invalid 45harry (no number at starting)
+
+sameer_kumar = 45  # sameer-kumar   invalid or sameer$kumar  (don't use dash;or special character')
+
 _45 = 34 #invalid  42 
+# you can use underscore instead of hyphen
 
-# MATHEMATHICS OPERATOR
+
+# MATHEMATHICS_OPERATOR
 
 # 1)  ARITHMATIC OPERATOR
+
+# output of two integer is intergers               # if one;integer and other floating then output floting
+#division(/) output always floting but it's not true for roundoff division(//).
+
 a = 2
 b = 5
 
-print(f"then, add {a+b}\nsubtract {a-b}\nmultiply {a*b}\ndivide {a/b}\ndivision (roundoff) { a//b}\nexponential {a**b}\nremainder {a%b}")
+print(a + b)       # addition
+print (a - b)          #subtraction
+print(a * b)        #multiplication
+print(a / b)            #division
+print(a // b)        #division (roundoff)
+print(a ** b)            #exponential
+print(a % b)           #remainder
 
-# ASSIGNNMENT OPERATOR
+
+# ASSIGNNMENT_OPERATOR(=      or     +=     or      -+     or     ==)
 
 a = 4-2 # Assign 4-2 in 
 print(a)
-b = 6
+b = 9
 # b += 3 # Increment the value of b by 3 and then assign it to b
 b -= 3 # Decrement the value of b by 3 and then assign it to b
-print(b) # OUTPUT (3)
-print (a+b) #output (5)
+print(b) # OUTPUT (6)
+print (a+b) #output (8)
 
-# COMPARISION OPERATOR
+
+# before we go futher some basic note,        when we use two same variable ,python take new variable and terminate previous.
+
+a = 3 
+a = 10  # python take value of a always 10 and never 3 
+b = 4
+print(a+b) #(output will be 14 instead of 7)
+
+
+# COMPARISION _OPERATOR
 
 a = 5 
 b = 4
@@ -44,7 +79,8 @@ print(d)
 print(5<=4) # bigger or equal to
 print(5!=5)  # (!=) is not equal sign
 
-# LOGICAL OPERATOR
+
+# LOGICAL_ OPERATOR
 
 #tell if value is true or not
 e = True or False  # value of e is true in physics
@@ -64,6 +100,7 @@ print("False and False is ", False and False)
 
 print(not(True))  # vive output opposite to true value, in tbis case 'FALSE'
 
+
 # QUESTION
 
 # 1) write a programme "twinkle twinkle little star" peom.
@@ -71,26 +108,35 @@ print(not(True))  # vive output opposite to true value, in tbis case 'FALSE'
 # 3) install a external module and use it to perform an operation of your interest.
 # 4) write a pythone programe to print the content of the directory.
 
-# CHAPTER 2
 
-# TYPE () FUNCTION AND TYPE CASTING
+
+
+# TYPE () FUNCTION_ AND _TYPE CASTING
+
+# This tell what type of data that your variable contain
+
 a = 2 
 p = type(a) # class<int>
 print(p)
 
-# To change type 
+# To change type of type inside variable
 a = "31.2"  # class <str>
 b = float(a) # a but the type should be float
 t = type(b) 
 print(t)
 
+
 # INPUT( ) FUCTION
+
+# you can tell user what he want to fill in some bracket
 a = int(input("Enter number 1:  "))
 b = int(input("Enter number 2:  "))
 
 print("Number a is: ", a)
 print("Number b is: ", b) 
 print("Sum is ", a + b)
+
+#always remember smallest sign you see
 
 # QUESTION
 
@@ -101,42 +147,54 @@ print("Sum is ", a + b)
 # 5) write a programe to find an average of two number entered by user
 # 6) write a programe to calculate square of a number entered by user
 
-# CHAPTER 3
 
-# STRING SLICING
 
-#we count any word in python as " from starting point [0,infinity)"  if we count "from bacword;[-1,-infinity)"
 
-name = 'harry' # from starting (0,1,2,3,4) from back (-1,-2,-3,-4,-5)
+# STRING _SLICING
+
+
+#we count any word in python as " from starting point [0,infinity)"  if we count "from bacword;(-infinty,-1] 
+# Always remember write from small number to biggest
+
+name = 'Trump' #counting letter or number  from starting (0,1,2,3,4) from backward (-1,-2,-3,-4,-5)
 
 # for slicing word
-print(name[1]) # output 'a'
-#multiple word slicing between two point
+print(name[1]) # output 'T' ( count T -> 0 (first number) ,R -> 1   (second number)     we need to exclude 1 according to rule)
+
+#word slicing between two point
 print(name[0:4]) # start from index 0 all the way till 4 (Excluding 4): "output 'harr"
 
 # If you see in any code in which word slicing written as
 print(name[-3:-1])
-# we first need to transform it like number that is counted from starting,  in this case total number of word 5 Now, [5 +(-3):5 +(-1)]
+# we first need to transform it like number that is counted from starting,  in this case total number of word 5 Now, [5 +(-3):5 +(-1)] that is [2:4]
 print(name[2:4])
+
 print(name[:4]) # is same as print(name[0:4])
 print(name[1:]) # is same as print(name[1:5])
-print(name[1:5])
+
 
 # for jump slicing
 a = 'sariant kod'
 print(a[0:12:2])  # last 2 is for jump
-#output 'sratkd' as after each 2 jump (s - > r -> a -> t -> k -> d)
+#output 'sratkd' as after each 2 jump (s - > r -> a -> t -> k -> d), (even we count gap)
 
-# STRING FUCTION
+
+# STRING_ FUCTION
+
+#string are unmutable that means we can only make new string but could never able to change existing one
+
+#for editing existing string we use some built in python string function
+
 
 # ===============================================
 # Python String Methods (Most used -> Least used)
 # ===============================================
 
+
 text = " sariant kod "
 text2 = ' DOCA '
 num_text = "12345"
-mix_text = "harry12345"
+mix_text = "Trump12345"
 title_text = "DIMENSION"
 multi_line = "harry\nsariant\nkod"
 
@@ -145,25 +203,31 @@ print("1. upper()       :", text.upper())        # Convert to UPPERCASE
 
 print("2. lower()       :", text2.lower())        # Convert to lowercase
 
+print("3. len()           :", len(text))        # for finding length of word ; remember len is not string fuction but global function that use everywher in code this is why it is written len(text)  instead of text,l.len()
+
 print("3. strip()       :", text.strip())        # Remove spaces from both ends
 
 print("4. replace()     :", text.replace("sariant", "Python").replace( "kod","book"))  # Replace substring
 
-print("5. split()       :", text.split())        # Split into list of words
+print("5. split()       :", text.split())        #       Split into list of words
 
 print("6. join()        :", "-".join(["a","b","c"])) # Join list into string with separator
 
 print("7. find()        :", text.find("world")) # Find index of substring (-1 if not found)
-#for find multiple word at same time we can do seprately or use "for" and "in"
+
+#for find multiple word at same time we9 can do seprately or use "for" and "in"
 for word in ["world", "sariant kod"]:
     print(f"Find '{word}' :", text.find(word))
     
 print("8. startswith()  :", text.startswith("  h"))  # Check if string starts with substring
+
 print("9. endswith()    :", text.endswith("od  "))  # Check if string ends with substring
 # startwith and end with give output in "true or false"
 
 print("10. format()     :", "My name is {}".format("Alice"))  # Insert values into placeholders
 
+#NOTE--:
+#just remember most used string function and doesn't need to remember everything.
 
 
 # 🔹 FREQUENTLY USED CHECK METHODS
@@ -179,7 +243,6 @@ print("15. islower()    :", text.islower())       # True if all lowercase
 print("16. isupper()    :", text2.isupper())    # True if all uppercase
 
 print("17. istitle()    :", "Hello World".istitle()) # True if title case
-
 
 
 
@@ -206,7 +269,6 @@ print("27. rpartition() :", text.rpartition("hello")) # Partition from the right
 
 
 
-
 # 🔹 ALIGNMENT / PADDING METHODS
 print("28. center()     :", "hi".center(10, "-"))  # Center text with padding
 
@@ -225,34 +287,45 @@ print("33. rstrip()     :", text.rstrip())         # Remove spaces on the RIGHT
 
 
 
-
 # 🔹 MULTI-LINE STRING METHODS
 print("34. splitlines() :", multi_line.splitlines()) # Split into lines
 
 
 
-
 # 🔹 ADVANCED / RARELY USED
 print("35. casefold()   :", "HELLO".casefold())    # Aggressive lowercase (for comparisons)
+
 print("36. encode()     :", text.encode())         # Encode string to bytes
+
 print("37. expandtabs() :", "a\tb".expandtabs(4))  # Replace tabs with spaces
+
 print("38. isascii()    :", "hello".isascii())     # True if all characters are ASCII
+
 print("39. isdecimal()  :", "123".isdecimal())     # True if decimal characters
+
 print("40. isnumeric()  :", "Ⅳ".isnumeric())       # True if numeric (includes Unicode)
+
 print("41. isidentifier():", "variable1".isidentifier()) # True if valid Python variable name
+
 print("42. isprintable():", "hello".isprintable()) # True if printable characters
+
 print("43. maketrans() & translate():",
       "hello".translate(str.maketrans({"h":"H","e":"E"}))) # Map characters to new ones
 
 # 🔹 NEW IN PYTHON 3.9+
 print("44. removeprefix():", "unhappy".removeprefix("un")) # Remove prefix if present
+
 print("45. removesuffix():", "running".removesuffix("ing")) # Remove suffix if present
 
 # 🔹 RARELY USED BUT EXISTS
 print("46. format_map() :", "{x} + {y}".format_map({"x":1,"y":2})) # Similar to format()
 
 
-# ESCAPE SEQUENCE CHARACTER
+
+# ESCAPE _SEQUENCE_ CHARACTER
+
+
+# inside string these sequenc character give you additional help and many time make your work more easier 
 
 # Newline -> moves text to the next line
 print("Hello\nWorld")  
@@ -286,13 +359,12 @@ print("Heart: \u2764  Smile: \U0001F600")
 # Output: Heart: ❤ (16bit)  Smile: 😀 (32bit)
 
 
-# QUESTION
 
-
-
-#CHAPTER4
 
 #LIST
+
+
+# to create a list of something and  list can contain all kind of data type
 
 friends = ["Apple", "Orange", 5, 345.06, False, "Aakash", "Rohan"]
 
@@ -302,7 +374,9 @@ friends[0] = "Grapes" # Unlike Strings lists are mutable
 print(friends[0])  #output "grapes"
 print(friends[1:4])  #output "orange,5,335.06"
 
-#LISTMETHOD
+#LIST_METHOD
+
+#for making change in list 
 
 L1 = [1,2,8,5,56,33]
 value = L1.pop(3)  # remove 5 from list
@@ -311,7 +385,9 @@ print(L1)
 
 friends = ["Apple", "Orange", 5, 345.06, False, "Aakash", "Rohan"]
 
-# --- Most Used List Methods ---
+
+# --- Most_Used_ List_ Methods ---
+
 
 print(friends.append('Banana'))
 print(f" :Adds 'Banana' at the end of the list:    {friends}")
@@ -346,13 +422,18 @@ print(f" Creates a shallow copy of the list:        {friends}")
 friends.clear()
 print(f"Removes all elements from the list:    {friends}")
 
+
 #TUPLET
 
-a = (1,45,342,3424,False, "Rohan", "Shivam")
+""" same as list but tuplet are unmutable unlike list"""
+
+a = (1,45,342,3424,False, "Rohan",
+ "Shivam")
 print(a)
 print(type(a))
 
-#TUPLETMETHOD
+#TUPLET_METHOD
+
 
 a = (1,45,342,3424,False, 45, "Rohan", "Shivam")
 print(a) 
