@@ -4,6 +4,29 @@
 
 
 
+
+# most common 
+print("hello,world!")   # double quote remember
+#for multiple line python use three double quote
+print("""hi,everyone i am begginer in coding
+
+and i am very enthusiasm to write my own code from starting ,and contnue
+to write as i learn""")
+
+#this is (#) sign for comment we write +comment for telling other what that code used for and comment does not abow in output
+
+# for multiple line comment similar to print use('  '   '  )  triple single quote 
+'''doctor
+                    djdn
+                                        djdidj
+                                        
+                                        dj '''
+
+
+# why we need multiple line triple quote because when we cut halfway through a line and continue to write pythone take it as something new unlike aingle double quote you continue to write without breaking line so even you take multiple line python with take it in same code.(foe example this comment)
+
+
+
 # DATA_RULE 
 
 a = 1 # a is an integer
@@ -101,14 +124,60 @@ print("False and False is ", False and False)
 print(not(True))  # vive output opposite to true value, in tbis case 'FALSE'
 
 
+
+
+#some basic knowledge
+# MODULE :>- A module in Python is just a file that contains Python code (functions, variables, or classes created by other)
+
+#Think of it like a toolbox 📦. Instead of writing everything yourself, you can use tools already inside that box.
+
+# you can create module but we take other people built code to make our work easier and faster
+
+
+#PIP:>- Imagine you need a tool (module) that is not already in Python.
+#With pip, you can download and install extra toolboxes
+# you can't create pip(if you want you need very advanced knowledge)
+
+''' NOTE :--  
+A good coder not only know how to solve PROBLEM but also how to follow INSTRUCTION.
+             BELOW there is quostion try to solve by your own and if you get any problem USE CAN USE CHATGPT OR ANY AI only for LEARNING PURPOSE.
+             
 # QUESTION
 
-# 1) write a programme "twinkle twinkle little star" peom.
-# 2) write table of 5 using RHEL or other way.
-# 3) install a external module and use it to perform an operation of your interest.
-# 4) write a pythone programe to print the content of the directory.
+# 1) write table of 5 using RHEL or other way.
+
+# HOW TO SOLVE FOLLOW INSTRUCTION
+
+Open Python in RHEL
+Start your terminal in RHEL (Red Hat Enterprise Linux).
+                Type python3 (or python) to open the Python interpreter.
+                In Python, * means multiplication
+Try printing 5 * 3 to see how it works.
+    now ,comple table 5
+    
+
+# 2) install a external module  "pyjokes" and use it to perform an operation of your interest.
+
+#HOW TO SOLVE FOLLOW INSTRUCTION
+
+#Install an external module and use it
+Open your terminal in RHEL.                                           
+Use pip (Python package manager) to install the module.
+
+Example: pip install <module_name>.
+Once installed, open Python and import that module using import. 
+
+    Explore the module’s functions (you can use help(module_name)).                       
+    Call a function from the module to perform some operation.
+   
+Example: In pyjokes, there is a function that gives you a joke.
 
 
+# 3) write a pythone programe to print the content of the directory.
+
+#HOW TO SOLVE FOLLOW INSTRUCTION
+
+Think about what a directory means (a folder that contains files).                                                                Python has a built-in module to interact with the operating system'''
 
 
 # TYPE () FUNCTION_ AND _TYPE CASTING
@@ -138,14 +207,87 @@ print("Sum is ", a + b)
 
 #always remember smallest sign you see
 
+
+
+
 # QUESTION
 
+'''
 # 1)  write a programe to add two number
+
+#HOW TO SOLVE FOLLOW INSTRUCTIO
+
+Ask the user to enter two numbers.
+
+Store them in variables.
+
+Add them using the + operator.
+
+Print the result
+
+
+
 # 2) write a programe to find remainder when a number is divided by 2
+
+#HOW TO SOLVE FOLLOW INSTRUCTIO
+
+Take a number from the user.
+
+Use the modulus operator % to find the remainder.
+
+Print the remainder.
+
+
+
 # 3) check the type of variable assigned using input() variable
+
+#HOW TO SOLVE FOLLOW INSTRUCTION
+
+Use input() to take a value from the user.
+Assign it to a variable.
+
+Use the type() function to check what kind of variable it is.
+
+Print the type.
+
+
+
 # 4) use comparision assignment to find whether 'a' is greater than 'b' or not.  take 'a = 34'  and 'b = 80'
+
+#HOW TO SOLVE FOLLOW INSTRUCTION
+
+Assign a = 34 and b = 80.
+
+Use a comparison operator (>).
+
+Print the result (True/False).
+
+
+
 # 5) write a programe to find an average of two number entered by user
+
+#HOW TO SOLVE FOLLOW INSTRUCTION
+
+Ask the user for two numbers.
+
+Add them together.
+
+Divide the result by 2.
+
+Print the average.
+
+
+
 # 6) write a programe to calculate square of a number entered by user
+
+#HOW TO SOLVE FOLLOW INSTRUCTION
+
+Take a number as input from the user.
+
+Multiply the number by itself.
+
+Print the result as the square.
+'''
 
 
 
