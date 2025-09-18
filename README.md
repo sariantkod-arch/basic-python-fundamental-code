@@ -1,0 +1,1 @@
+Beginner-friendly repository with detailed Python basics explained through clean source code. I’m also learning, so I’ll keep updating this project to make it a growing resource for anyone starting their Python journey.
