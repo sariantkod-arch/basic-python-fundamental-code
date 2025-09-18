@@ -1,3 +1,16 @@
+#what is code
+#It is just a language like english ,that is written by people in order to take with computer
+
+#syntax js just like word
+#in different programming language syntax can be varies but concept remain tbe same
+
+#python can be  used every where
+#SQL is querying language
+#JavaScript, HTML , CSS arre language of web ,learn to create website from scratch
+
+# in this programe ,we are gonna learn PYTHON 
+
+
 # Remember about syntax and every small detail during writing code as even smallest mistake can be fatal.
 
 #<<<<<<<<<<<LET START>>>>>>>>>>>
@@ -7,13 +20,13 @@
 
 # most common 
 print("hello,world!")   # double quote remember
+
 #for multiple line python use three double quote
 print("""hi,everyone i am begginer in coding
-
 and i am very enthusiasm to write my own code from starting ,and contnue
 to write as i learn""")
 
-#this is (#) sign for comment we write +comment for telling other what that code used for and comment does not abow in output
+#this is (#) sign for comment we write comment for telling other what that code used for and comment does not abow in output
 
 # for multiple line comment similar to print use('  '   '  )  triple single quote 
 '''doctor
@@ -23,24 +36,34 @@ to write as i learn""")
                                         dj '''
 
 
-# why we need multiple line triple quote because when we cut halfway through a line and continue to write pythone take it as something new unlike aingle double quote you continue to write without breaking line so even you take multiple line python with take it in same code.(foe example this comment)
+# why we need multiple line triple quote because when we cut halfway through a line and continue to write python  take it as something new unlike single double quote wher you continue to write without breaking line. so, when you take multiple line python with take it in same code.(for example this comment)
 
 
 
 # DATA_RULE 
+#[data type is for DIFFERENTIATING between number,text,etc]
 
+# Everything in python has DATATYPE and  CLASS
+
+# FUNDAMENTAL_ DATA_ TYPE
 a = 1 # a is an integer
 b = 5.22 # b is a floating point number(decimal)
 
 c = "sariantkod" # c is a string ( you can also use single quote instead of  double no problem)
 
-d = False # d is a boolean variable(give output in true or false)
-e = None # e is a none type variable
+d = False # d is a boolean variable(give output in True{capital T} or False)
+e = None # e is a None{capital N} type variable
+
+# some COMPLEX _CLASS
+s = set()  #set
+c = ()            #dictionary
+li = [2,"handsome",7.0,True]     #list
+te = (2,9,8.0,"sariant")    #tuple
 
 
 
-
-# VARIABL_ERULE
+# VARIABLE_RULE
+# variable store data in memoey, think it as container that hold data which can changed later in peograme.'
 
 a = 23  # invalid  'a'(NO use of Double quotes and Single quote)
 
@@ -58,7 +81,7 @@ _45 = 34 #invalid  42
 
 # 1)  ARITHMATIC OPERATOR
 
-# output of two integer is intergers               # if one;integer and other floating then output floting
+# output of two integer is intergers                               # if one;integer and other floating then output floting
 #division(/) output always floting but it's not true for roundoff division(//).
 
 a = 2
@@ -67,10 +90,23 @@ b = 5
 print(a + b)       # addition
 print (a - b)          #subtraction
 print(a * b)        #multiplication
-print(a / b)            #division
-print(a // b)        #division (roundoff)
+print(a / b)            #division 
+print(a // b)        #floor division (change                            dicimal division into                        integer by taking taking  most                significant interger  example :->                                    "2.99" it will give "2" answer)
 print(a ** b)            #exponential
-print(a % b)           #remainder
+print(a % b)           #remainder(modulus)
+print(round(a/b))   # for roundoff division
+
+
+# it is important to know order of execution of python operator (highest to lowest ) just like in math
+
+#  first () this is parenthesis
+
+# then **
+
+#  after   *  ,  /    ,    //    ,    %   (from left to right it depend on you how you write equatiion in python)
+
+#and last       +   ,    -   
+
 
 
 # ASSIGNNMENT_OPERATOR(=      or     +=     or      -+     or     ==)
@@ -90,6 +126,18 @@ a = 3
 a = 10  # python take value of a always 10 and never 3 
 b = 4
 print(a+b) #(output will be 14 instead of 7)
+
+
+#  SHORTHAND FOR ARITHMATICS
+
+a = 5
+b = 6
+
+a += b        # a = a+b(11)
+
+a += b        # a = a+b(17)
+
+a += 20  # a = a + 20  (25)
 
 
 # COMPARISION _OPERATOR
@@ -180,7 +228,46 @@ Example: In pyjokes, there is a function that gives you a joke.
 Think about what a directory means (a folder that contains files).                                                                Python has a built-in module to interact with the operating system'''
 
 
-# TYPE () FUNCTION_ AND _TYPE CASTING
+
+'''
+#NOTE
+
+# Before moving further lets look at common defination (most people make mistake in) difference between MODULE , FUNCTION()  ,  ALGORITHM
+
+1)  MODULE :-->  File or COLLECTION of File that contain function() , class ,and variable
+example:
+    
+ import math   #math is module
+             print(math.sqrt(16))  # using                                   function inside math module
+             
+2) FUNCTION() :-->  Fuction allows us to BREAK up our program into MINI PROGRAM ,each with specific task that we need.
+suppose we need to make spaggeti ,
+
+step to follow:
+ a) take a skillet
+ b) take one  up water and boil it
+ c) take raw spaggeti and cook it in water
+ d) use some salt and pepper
+ e) serve the food and then eat.
+ 
+so, much work  ,Sppose we have a function called spaggeti_cook witth all instrution written in it .then,instead of writing long instrution we just write function(spaggeti_cook) and it work done.
+
+A function is like Machine thht perform specific task. you can give INPUT(ARGUMENT) ,if its work then it will give you back OUTPUT(RETURN VALUE)
+
+example: 
+    def add (a,b):   # function defination
+            return a + b
+ 
+ print(add(3,5))   # function call
+ 
+ 
+3) ALGORITHM :--> an algorithm is                         STEP-BY-STEP PROCESS or RECIPE for SOLVING PROBLEM.
+it is NOT CODE Itself ,but rather the logic or method that you can later write as code
+'''
+
+
+
+# TYPE () FUNCTION_AND_TYPECASTING
 
 # This tell what type of data that your variable contain
 
@@ -646,6 +733,7 @@ print(s1.union(s2))
 print(s1.intersection(s2))
 
 #CONDITION
+#to make yes or no decision 
 
 a = int(input("Enter your age: "))
 
